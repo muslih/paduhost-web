@@ -1,0 +1,763 @@
+/*******************************************************************************
+
+Title: paduhost
+Date: 19 Juni 2013
+Author: Zeen Studio (http://zeen-studio.com)
+
+********************************************************************************
+
+	1  zeengrid
+	2  general
+	3  header
+	4  section
+	5  aside
+	6  footer
+	7  fontawesome
+
+*******************************************************************************/
+/*******************************************************************************/
+/*     1. Zeengrid
+/*******************************************************************************/
+/* line 13, ../src/sass/partials/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* line 19, ../src/sass/partials/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/* line 23, ../src/sass/partials/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 29, ../src/sass/partials/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 34, ../src/sass/partials/_normalize.scss */
+html {
+  background: #fff;
+  /* 1 */
+  color: #000;
+  /* 2 */
+  font-family: sans-serif;
+  /* 3 */
+  -ms-text-size-adjust: 100%;
+  /* 4 */
+  -webkit-text-size-adjust: 100%;
+  /* 4 */
+}
+
+/* line 43, ../src/sass/partials/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* line 48, ../src/sass/partials/_normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/* line 53, ../src/sass/partials/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* line 57, ../src/sass/partials/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 62, ../src/sass/partials/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 67, ../src/sass/partials/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 71, ../src/sass/partials/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 75, ../src/sass/partials/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/* line 81, ../src/sass/partials/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 89, ../src/sass/partials/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/* line 94, ../src/sass/partials/_normalize.scss */
+pre {
+  white-space: pre-wrap;
+}
+
+/* line 98, ../src/sass/partials/_normalize.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/* line 102, ../src/sass/partials/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 107, ../src/sass/partials/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 114, ../src/sass/partials/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 118, ../src/sass/partials/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 122, ../src/sass/partials/_normalize.scss */
+img {
+  border: 0;
+}
+
+/* line 126, ../src/sass/partials/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 130, ../src/sass/partials/_normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* line 134, ../src/sass/partials/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 140, ../src/sass/partials/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/* line 148, ../src/sass/partials/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/* line 155, ../src/sass/partials/_normalize.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/* line 160, ../src/sass/partials/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/* line 167, ../src/sass/partials/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/* line 173, ../src/sass/partials/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/* line 178, ../src/sass/partials/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/* line 183, ../src/sass/partials/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/* line 191, ../src/sass/partials/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 196, ../src/sass/partials/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 201, ../src/sass/partials/_normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* line 206, ../src/sass/partials/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 21, ../src/sass/partials/_zeen.scss */
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+/* line 26, ../src/sass/partials/_zeen.scss */
+.bungkus {
+  padding: 0 15px;
+  position: relative;
+  *zoom: 1;
+}
+/* line 38, ../../../../../../usr/local/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.bungkus:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 34, ../src/sass/partials/_zeen.scss */
+.baris {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  max-width: 978px;
+  *zoom: 1;
+}
+/* line 38, ../../../../../../usr/local/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.baris:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 47, ../src/sass/partials/_zeen.scss */
+[class*="zeen"] {
+  float: left;
+  display: inline;
+  min-height: 1px;
+  position: relative;
+  margin-left: 3.09091%;
+}
+/* line 55, ../src/sass/partials/_zeen.scss */
+[class*="zeen"]:first-child {
+  margin-left: 0;
+}
+
+/* line 61, ../src/sass/partials/_zeen.scss */
+.zeen-1 {
+  width: 5.5%;
+}
+
+/* line 61, ../src/sass/partials/_zeen.scss */
+.zeen-2 {
+  width: 14.09091%;
+}
+
+/* line 61, ../src/sass/partials/_zeen.scss */
+.zeen-3 {
+  width: 22.68182%;
+}
+
+/* line 61, ../src/sass/partials/_zeen.scss */
+.zeen-4 {
+  width: 31.27273%;
+}
+
+/* line 61, ../src/sass/partials/_zeen.scss */
+.zeen-5 {
+  width: 39.86364%;
+}
+
+/* line 61, ../src/sass/partials/_zeen.scss */
+.zeen-6 {
+  width: 48.45455%;
+}
+
+/* line 61, ../src/sass/partials/_zeen.scss */
+.zeen-7 {
+  width: 57.04545%;
+}
+
+/* line 61, ../src/sass/partials/_zeen.scss */
+.zeen-8 {
+  width: 65.63636%;
+}
+
+/* line 61, ../src/sass/partials/_zeen.scss */
+.zeen-9 {
+  width: 74.22727%;
+}
+
+/* line 61, ../src/sass/partials/_zeen.scss */
+.zeen-10 {
+  width: 82.81818%;
+}
+
+/* line 61, ../src/sass/partials/_zeen.scss */
+.zeen-11 {
+  width: 91.40909%;
+}
+
+/* line 61, ../src/sass/partials/_zeen.scss */
+.zeen-12 {
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 3, ../src/sass/partials/_zeen-resp.scss */
+  .baris {
+    max-width: 767px;
+  }
+  /* line 5, ../src/sass/partials/_zeen-resp.scss */
+  .baris [class*="zeen"] {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+/* line 1, ../src/sass/partials/_general.scss */
+body {
+  background: url('../img/head-bg.jpg?1371454191') top center repeat-x;
+  background-attachment: fixed;
+  color: #444444;
+}
+
+/*******************************************************************************/
+/*     header
+/*******************************************************************************/
+/* line 11, ../src/sass/partials/_general.scss */
+#header {
+  background: #fdc438;
+  padding: 30px 0 0 0;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.4) 0 1px 15px;
+  -moz-box-shadow: rgba(255, 255, 255, 0.4) 0 1px 15px;
+  box-shadow: rgba(255, 255, 255, 0.4) 0 1px 15px;
+}
+
+/* line 17, ../src/sass/partials/_general.scss */
+#logo {
+  float: left;
+}
+
+/* line 22, ../src/sass/partials/_general.scss */
+#slide {
+  overflow: hidden;
+  display: block;
+  padding: 100px 0;
+}
+/* line 27, ../src/sass/partials/_general.scss */
+#slide strong {
+  font-size: 45px;
+  float: left;
+  padding: 15px;
+  background: rgba(253, 196, 56, 0.5);
+  color: rgba(255, 255, 255, 0.8);
+}
+/* line 34, ../src/sass/partials/_general.scss */
+#slide em {
+  font-size: 35px;
+  clear: left;
+  float: left;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* line 43, ../src/sass/partials/_general.scss */
+nav {
+  float: right;
+}
+/* line 45, ../src/sass/partials/_general.scss */
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+/* line 49, ../src/sass/partials/_general.scss */
+nav li {
+  list-style: none;
+  float: left;
+}
+/* line 52, ../src/sass/partials/_general.scss */
+nav li a {
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  text-decoration: none;
+  color: #444444;
+  padding: 10px 15px 30px 15px;
+  display: block;
+}
+/* line 59, ../src/sass/partials/_general.scss */
+nav li a.active {
+  color: #000;
+  -webkit-box-shadow: black 0 -5px 0 inset;
+  -moz-box-shadow: black 0 -5px 0 inset;
+  box-shadow: black 0 -5px 0 inset;
+}
+/* line 63, ../src/sass/partials/_general.scss */
+nav li a:hover {
+  color: #9a6e02;
+  -webkit-box-shadow: #684a01 0 -5px 0 inset;
+  -moz-box-shadow: #684a01 0 -5px 0 inset;
+  box-shadow: #684a01 0 -5px 0 inset;
+}
+
+/*******************************************************************************/
+/*     section
+/*******************************************************************************/
+/* line 76, ../src/sass/partials/_general.scss */
+#konten {
+  background: #fff;
+}
+
+/* line 80, ../src/sass/partials/_general.scss */
+#fitur {
+  text-align: center;
+}
+
+/* font-face */
+@font-face {
+  font-family: "GeneralFoundicons";
+  src: url("../font/general_foundicons.eot");
+  src: url("../font/general_foundicons.eot?#iefix") format("embedded-opentype"), url("../font/general_foundicons.woff") format("woff"), url("../font/general_foundicons.ttf") format("truetype"), url("../font/general_foundicons.svg#GeneralFoundicons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* global foundicon styles */
+/* line 7, ../src/sass/partials/_general_zeenicons.scss */
+[class*="foundicon-"] {
+  display: inline;
+  width: auto;
+  height: auto;
+  line-height: inherit;
+  vertical-align: middle;
+  background-image: none;
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+/* line 18, ../src/sass/partials/_general_zeenicons.scss */
+[class*="foundicon-"]:before {
+  font-family: "GeneralFoundicons";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+}
+
+/* icons */
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-settings:before {
+  content: "\f000";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-heart:before {
+  content: "\f001";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-star:before {
+  content: "\f002";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-plus:before {
+  content: "\f003";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-minus:before {
+  content: "\f004";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-checkmark:before {
+  content: "\f005";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-remove:before {
+  content: "\f006";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-mail:before {
+  content: "\f007";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-calendar:before {
+  content: "\f008";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-page:before {
+  content: "\f009";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-tools:before {
+  content: "\f00a";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-globe:before {
+  content: "\f00b";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-home:before {
+  content: "\f00c";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-quote:before {
+  content: "\f00d";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-people:before {
+  content: "\f00e";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-monitor:before {
+  content: "\f00f";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-laptop:before {
+  content: "\f010";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-phone:before {
+  content: "\f011";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-cloud:before {
+  content: "\f012";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-error:before {
+  content: "\f013";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-right-arrow:before {
+  content: "\f014";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-left-arrow:before {
+  content: "\f015";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-up-arrow:before {
+  content: "\f016";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-down-arrow:before {
+  content: "\f017";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-trash:before {
+  content: "\f018";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-add-doc:before {
+  content: "\f019";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-edit:before {
+  content: "\f01a";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-lock:before {
+  content: "\f01b";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-unlock:before {
+  content: "\f01c";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-refresh:before {
+  content: "\f01d";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-paper-clip:before {
+  content: "\f01e";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-video:before {
+  content: "\f01f";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-photo:before {
+  content: "\f020";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-graph:before {
+  content: "\f021";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-idea:before {
+  content: "\f022";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-mic:before {
+  content: "\f023";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-cart:before {
+  content: "\f024";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-address-book:before {
+  content: "\f025";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-compass:before {
+  content: "\f026";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-flag:before {
+  content: "\f027";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-location:before {
+  content: "\f028";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-clock:before {
+  content: "\f029";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-folder:before {
+  content: "\f02a";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-inbox:before {
+  content: "\f02b";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-website:before {
+  content: "\f02c";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-smiley:before {
+  content: "\f02d";
+}
+
+/* line 6, ../src/sass/partials/_settings.scss */
+.foundicon-search:before {
+  content: "\f02e";
+}

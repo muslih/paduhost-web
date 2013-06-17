@@ -1,0 +1,82 @@
+body{
+	background:image-url('head-bg.jpg') top center repeat-x;
+	background-attachment: fixed;
+	color: $mainFontCol;
+}
+
+/*******************************************************************************/
+/*     header
+/*******************************************************************************/
+
+#header{
+	background: $mainColor;
+	padding:30px 0 0 0;
+	@include box-shadow(rgba(255, 255, 255, 0.40) 0 1px 15px);
+}
+
+#logo{
+	float: left;
+}
+
+
+#slide{
+	overflow: hidden;
+	display: block;
+	padding: 100px 0;
+
+	strong{
+		font-size: 45px;
+		float: left;
+		padding:15px;
+		background: rgba($mainColor,0.5);
+		color:rgba(#fff,0.8);
+	}
+	em{
+		font-size: 35px;
+		clear: left;
+		float: left;
+		padding:15px;
+		background: rgba(#fff,0.5)
+	}
+}
+
+nav{
+	float: right;
+	ul{
+		padding:0;
+		margin:0;
+	}
+	li{
+		list-style:none;
+		float: left;
+		a{
+			@include transition-duration(0.5s);
+			text-decoration: none;
+			color:$mainFontCol;
+			padding: 10px 15px 30px 15px;
+			display: block;
+
+			&.active{
+				color:#000;
+				@include box-shadow(#000 0 -5px 0 inset);
+			}
+			&:hover{
+				color: darken($mainColor,30%);
+				@include box-shadow(darken($mainColor,40%) 0 -5px 0 inset);
+			}
+		}		
+	}
+}
+
+/*******************************************************************************/
+/*     section
+/*******************************************************************************/
+
+
+#konten{
+	background: #fff;	
+}
+
+#fitur{
+	text-align: center;
+}
