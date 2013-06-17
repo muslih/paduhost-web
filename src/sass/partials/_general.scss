@@ -6,9 +6,41 @@ body{
 }
 
 h1,h2,h3{
-	// font-family: 'Titillium Web', sans-serif;
+	font-family: 'Titillium Web', sans-serif;
 }
 
+p{	
+	margin-top: 0;
+	font-size: 15px;
+	line-height: 25px;
+}
+
+
+button{
+	@include transition-duration(1s);
+	font-size: 15px;
+	color:lighten(#444,10%);
+	border: none;
+	@include border-radius(5px);
+	background: $mainColor;
+	padding: 10px 15px 10px 15px;
+	@include box-shadow(darken($mainColor,20%) 0 -3px 0 inset);
+	// border-bottom: solid 3px darken($mainColor,20%);
+
+	&:hover{
+		color:#fff;
+		@include transition-duration(0.5s);
+		background: darken($mainColor,10%);
+		@include box-shadow(darken($mainColor,35%) 0 -3px 0 inset);
+		// border-bottom: solid 3px darken($mainColor,35%);
+	}
+	// &:active{
+	// 	padding:12px 15px 8px 15px;
+	// 	// background: red;
+	// 	// border-bottom: solid 1px darken($mainColor,35%);
+	// 	@include box-shadow(darken($mainColor,35%) 0 -1px 0 inset);
+	// }
+}
 /*******************************************************************************/
 /*     header
 /*******************************************************************************/
@@ -33,7 +65,7 @@ h1,h2,h3{
 	padding: 100px 0;
 
 	strong{
-		// font-family: 'Titillium Web', sans-serif;
+		font-family: 'Titillium Web', sans-serif;
 		font-size: 45px;
 		float: left;
 		padding:15px;
@@ -41,7 +73,7 @@ h1,h2,h3{
 		color:rgba(#fff,0.8);
 	}
 	em{
-		// font-family: 'Titillium Web', sans-serif;
+		font-family: 'Titillium Web', sans-serif;
 		font-style: normal;
 		font-size: 35px;
 		clear: left;
@@ -66,7 +98,7 @@ nav{
 		}
 		a{
 			@include transition-duration(0.5s);
-			// font-family: 'Titillium Web', sans-serif;
+			font-family: 'Titillium Web', sans-serif;
 			text-decoration: none;
 			color:$mainFontCol;
 			padding: 40px 15px 30px 15px;
@@ -91,7 +123,7 @@ nav{
 
 
 #konten{
-	background: #fff;	
+	background: $kontenColor;	
 }
 
 #fitur{
@@ -103,6 +135,58 @@ nav{
 	}
 	h2{
 		margin:0;
-		color:$mainColor;
+		// color:$mainColor;
 	}
+	p{
+		color:lighten($secColor,20%);
+	}
+}
+
+.tombol{
+	margin:15px 0 50px 0;
+	display: block;
+}
+
+#paket{
+	@extend #fitur;
+	.kotak{
+		@include transition-duration(1s);
+		@include box-shadow(1px 1px 0px lighten($secColor,30%));
+		background: #fff;
+		padding: 10px;
+		p{
+			margin:0;
+		}
+		&:hover{
+			@include transition-duration(1s);
+			@include box-shadow(2px 2px 0px lighten($secColor,20%));
+		}
+	}
+	.tombol{
+		margin: 15px 0px;
+	}
+}
+
+#klien{
+	background: #e2e2e2;
+	margin: 50px 0;
+	padding: 15px 0;
+}
+#beli{
+	margin:40px 0;
+	.kotak{
+		padding: 15px;
+		background: #fff;
+	}
+}
+
+#aside{
+	background: lighten($secColor,10%);
+	color:#fff;
+	padding:20px 0;
+}
+
+#footer{
+	@extend #aside;
+	background: darken($secColor,10%);
 }
