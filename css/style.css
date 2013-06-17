@@ -398,6 +398,7 @@ img {
 }
 /* line 1, ../src/sass/partials/_general.scss */
 body {
+  font-family: arial;
   background: url('../img/head-bg.jpg?1371454191') top center repeat-x;
   background-attachment: fixed;
   color: #444444;
@@ -406,27 +407,30 @@ body {
 /*******************************************************************************/
 /*     header
 /*******************************************************************************/
-/* line 11, ../src/sass/partials/_general.scss */
+/* line 16, ../src/sass/partials/_general.scss */
 #header {
   background: #fdc438;
-  padding: 30px 0 0 0;
-  -webkit-box-shadow: rgba(255, 255, 255, 0.4) 0 1px 15px;
-  -moz-box-shadow: rgba(255, 255, 255, 0.4) 0 1px 15px;
-  box-shadow: rgba(255, 255, 255, 0.4) 0 1px 15px;
-}
-
-/* line 17, ../src/sass/partials/_general.scss */
-#logo {
-  float: left;
+  -webkit-box-shadow: #444444 0 -7px 0 inset;
+  -moz-box-shadow: #444444 0 -7px 0 inset;
+  box-shadow: #444444 0 -7px 0 inset;
 }
 
 /* line 22, ../src/sass/partials/_general.scss */
+#logo {
+  float: left;
+}
+/* line 24, ../src/sass/partials/_general.scss */
+#logo img {
+  margin-top: 15px;
+}
+
+/* line 30, ../src/sass/partials/_general.scss */
 #slide {
   overflow: hidden;
   display: block;
   padding: 100px 0;
 }
-/* line 27, ../src/sass/partials/_general.scss */
+/* line 35, ../src/sass/partials/_general.scss */
 #slide strong {
   font-size: 45px;
   float: left;
@@ -434,8 +438,9 @@ body {
   background: rgba(253, 196, 56, 0.5);
   color: rgba(255, 255, 255, 0.8);
 }
-/* line 34, ../src/sass/partials/_general.scss */
+/* line 43, ../src/sass/partials/_general.scss */
 #slide em {
+  font-style: normal;
   font-size: 35px;
   clear: left;
   float: left;
@@ -443,21 +448,29 @@ body {
   background: rgba(255, 255, 255, 0.5);
 }
 
-/* line 43, ../src/sass/partials/_general.scss */
+/* line 54, ../src/sass/partials/_general.scss */
 nav {
   float: right;
 }
-/* line 45, ../src/sass/partials/_general.scss */
+/* line 56, ../src/sass/partials/_general.scss */
 nav ul {
   padding: 0;
   margin: 0;
 }
-/* line 49, ../src/sass/partials/_general.scss */
+/* line 60, ../src/sass/partials/_general.scss */
 nav li {
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
   list-style: none;
   float: left;
 }
-/* line 52, ../src/sass/partials/_general.scss */
+/* line 64, ../src/sass/partials/_general.scss */
+nav li:hover {
+  background: #fff1cf;
+}
+/* line 67, ../src/sass/partials/_general.scss */
 nav li a {
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
@@ -465,35 +478,44 @@ nav li a {
   transition-duration: 0.5s;
   text-decoration: none;
   color: #444444;
-  padding: 10px 15px 30px 15px;
+  padding: 40px 15px 30px 15px;
   display: block;
 }
-/* line 59, ../src/sass/partials/_general.scss */
-nav li a.active {
-  color: #000;
-  -webkit-box-shadow: black 0 -5px 0 inset;
-  -moz-box-shadow: black 0 -5px 0 inset;
-  box-shadow: black 0 -5px 0 inset;
+/* line 75, ../src/sass/partials/_general.scss */
+nav li a.active, nav li a:hover {
+  color: #444;
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-box-shadow: #fdc438 0 -7px 0 inset;
+  -moz-box-shadow: #fdc438 0 -7px 0 inset;
+  box-shadow: #fdc438 0 -7px 0 inset;
 }
-/* line 63, ../src/sass/partials/_general.scss */
+/* line 80, ../src/sass/partials/_general.scss */
 nav li a:hover {
-  color: #9a6e02;
-  -webkit-box-shadow: #684a01 0 -5px 0 inset;
-  -moz-box-shadow: #684a01 0 -5px 0 inset;
-  box-shadow: #684a01 0 -5px 0 inset;
+  background: #fff;
 }
 
 /*******************************************************************************/
 /*     section
 /*******************************************************************************/
-/* line 76, ../src/sass/partials/_general.scss */
+/* line 93, ../src/sass/partials/_general.scss */
 #konten {
   background: #fff;
 }
 
-/* line 80, ../src/sass/partials/_general.scss */
+/* line 97, ../src/sass/partials/_general.scss */
 #fitur {
   text-align: center;
+}
+/* line 99, ../src/sass/partials/_general.scss */
+#fitur i {
+  font-size: 100px;
+  display: block;
+  margin-top: 25px;
+}
+/* line 104, ../src/sass/partials/_general.scss */
+#fitur h2 {
+  margin: 0;
+  color: #fdc438;
 }
 
 /* font-face */
