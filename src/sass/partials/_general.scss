@@ -33,7 +33,6 @@ p{
 	}
 }
 
-
 #slide{
 	overflow: hidden;
 	display: block;
@@ -137,19 +136,68 @@ nav{
 
 #paket{
 	@extend #fitur;
+	@include transition-duration(1s);
+
+	h3{
+		@include transition-duration(1s);
+		font-size: 30px;
+		background:darken($mainColor,10%);
+		color: #fff;
+		margin: 0;
+		padding:0 0 10px 0;
+		
+		&:before{
+			@include transition-duration(1s);
+			padding:5px 0;
+			content: "Paket";
+			background:darken($mainColor,20%);
+			font-size: 13px;
+			display: block;
+		}
+
+		span{
+			margin-top: 5px;
+			font-size: 15px;
+			display: block;
+		}
+	}
+
+	[class*="zeen"]{
+		&:nth-child(even){
+			h3{
+				@include transition-duration(1s);
+				background: lighten($secColor,15%);
+			
+				&:before{
+					@include transition-duration(1s);
+					background:darken($secColor,5%);
+				}
+			}
+
+			
+			.tombol{
+				&:after{
+					content: none;
+				}
+				button{
+					@include tombol(lighten($secColor,15%), #fff, transparent);
+				}
+			}		
+		}		
+	}
+
+
 	.kotak{
 		@include transition-duration(1s);
 		@include box-shadow(1px 1px 0px lighten($secColor,30%));
 		background: #fff;
 		padding: 10px;
 		margin-bottom: 50px;
+
 		p{
 			margin:0;
 		}
-		&:hover{
-			@include transition-duration(1s);
-			@include box-shadow(2px 2px 1px lighten($secColor,20%));
-		}
+		
 
 		.tombol{
 			&:after{
@@ -167,6 +215,26 @@ nav{
 			@include tombol;
 		}
 	}
+
+	ul{
+		margin:10px 0 0 0;
+		padding: 0;
+
+		li{
+			@include transition-duration(1s);
+			list-style: none;
+			color:lighten($secColor,20%);
+			text-decoration: none;
+			font-size: 15px;
+			line-height: 35px;
+			border-bottom: 1px solid lighten($secColor,65%);
+			
+			&:hover{
+				background: lighten($secColor,78%);
+				
+			}
+		}
+	}
 }
 
 
@@ -175,11 +243,12 @@ nav{
 
 	background: #e2e2e2;
 	margin: 50px 0;
-	padding: 15px;
+	padding: 25px;
 	text-align: center;
 	img{
 		@include transition-duration(1s);
 		opacity: 0.7;
+		margin:10px;
 	}
 	&:hover{
 		img{
@@ -190,6 +259,7 @@ nav{
 
 
 #beli{
+	display: none;
 	margin:40px 0;
 	.kotak{
 		overflow: hidden;
@@ -209,11 +279,74 @@ nav{
 
 #aside{
 	background: lighten($secColor,10%);
-	color:#fff;
-	padding:20px 0;
+	color:darken(#fff,20%);
+	padding:30px 0;
+	h2{
+		margin-top: 0;
+		font-size: 15px;
+	}
+
+	img{
+		@include transition-duration(1s);
+		display: block;
+		margin-bottom: 15px;
+		opacity: 0.4;
+
+		&:hover{
+			opacity: 1;
+		}
+	}
+
+	i{
+		float: left;
+	}
+
+	p{
+		font-size: 13px;
+		line-height: 25px;
+		margin-bottom: 0;
+		margin-left: 25px;
+	}
+
+	ul{
+		padding: 0;
+		margin:0;
+		&.jejaring{
+			margin-top: 0;
+		}
+	}
+
+	li{
+		padding:0;
+		list-style: none;
+		a{
+			@include transition-duration(1s);
+			font-size: 13px;
+			line-height: 25px;
+			color:darken(#fff,20%);
+			text-decoration: none;
+
+			&:hover{
+				@include transition-duration(1s);
+				color:#fff;
+			}
+		}
+	}
 }
 
 #footer{
+	padding:20px 0;
 	@extend #aside;	
 	background: darken($secColor,10%);
+	p{
+		margin:0;
+		float: left;	
+	
+		&.kredit{
+			text-align: right;
+			float: right;
+		}
+	}
 }
+
+

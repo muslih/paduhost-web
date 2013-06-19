@@ -13,6 +13,7 @@ Author: Zeen Studio (http://zeen-studio.com)
 	5  aside
 	6  footer
 	7  fontawesome
+	8  responsive
 
 *******************************************************************************/
 // main
@@ -29,6 +30,9 @@ Author: Zeen Studio (http://zeen-studio.com)
 
 // style untuk fontAwesome
 @import "partials/general_zeenicons";
+
+// style untuk responsive
+@import "partials/responsive";
 
 
 

@@ -13,6 +13,7 @@ Author: Zeen Studio (http://zeen-studio.com)
 	5  aside
 	6  footer
 	7  fontawesome
+	8  responsive
 
 *******************************************************************************/
 /*******************************************************************************/
@@ -506,6 +507,95 @@ nav li a:hover {
   border-bottom: solid 1px #815c01;
 }
 
+#paket {
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+}
+#paket h3 {
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  font-size: 30px;
+  background: #fcb506;
+  color: #fff;
+  margin: 0;
+  padding: 0 0 10px 0;
+}
+#paket h3:before {
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  padding: 5px 0;
+  content: "Paket";
+  background: #cd9202;
+  font-size: 13px;
+  display: block;
+}
+#paket h3 span {
+  margin-top: 5px;
+  font-size: 15px;
+  display: block;
+}
+#paket [class*="zeen"]:nth-child(even) h3 {
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  background: #5b5b5b;
+}
+#paket [class*="zeen"]:nth-child(even) h3:before {
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  background: #282828;
+}
+#paket [class*="zeen"]:nth-child(even) .tombol:after {
+  content: none;
+}
+#paket [class*="zeen"]:nth-child(even) .tombol button {
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-property: background;
+  -moz-transition-property: background;
+  -o-transition-property: background;
+  transition-property: background;
+  font-size: 15px;
+  color: white;
+  border: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background: #5b5b5b;
+  padding: 10px 15px 10px 15px;
+  -webkit-box-shadow: transparent 0 0 0 10px;
+  -moz-box-shadow: transparent 0 0 0 10px;
+  box-shadow: transparent 0 0 0 10px;
+  border-bottom: solid 3px #282828;
+}
+#paket [class*="zeen"]:nth-child(even) .tombol button:hover {
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: background;
+  -moz-transition-property: background;
+  -o-transition-property: background;
+  transition-property: background;
+  background: #424242;
+}
+#paket [class*="zeen"]:nth-child(even) .tombol button:active {
+  margin-top: 2px;
+  border-bottom: solid 1px #020202;
+}
 #paket .kotak {
   -webkit-transition-duration: 1s;
   -moz-transition-duration: 1s;
@@ -520,15 +610,6 @@ nav li a:hover {
 }
 #paket .kotak p {
   margin: 0;
-}
-#paket .kotak:hover {
-  -webkit-transition-duration: 1s;
-  -moz-transition-duration: 1s;
-  -o-transition-duration: 1s;
-  transition-duration: 1s;
-  -webkit-box-shadow: 2px 2px 1px #686868;
-  -moz-box-shadow: 2px 2px 1px #686868;
-  box-shadow: 2px 2px 1px #686868;
 }
 #paket .kotak .tombol:after {
   content: none;
@@ -615,11 +696,30 @@ nav li a:hover {
   margin-top: 2px;
   border-bottom: solid 1px #815c01;
 }
+#paket ul {
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+#paket ul li {
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  list-style: none;
+  color: #686868;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 35px;
+  border-bottom: 1px solid #dbdbdb;
+}
+#paket ul li:hover {
+  background: #fcfcfc;
+}
 
 #klien {
   background: #e2e2e2;
   margin: 50px 0;
-  padding: 15px;
+  padding: 25px;
   text-align: center;
 }
 #klien img {
@@ -628,12 +728,14 @@ nav li a:hover {
   -o-transition-duration: 1s;
   transition-duration: 1s;
   opacity: 0.7;
+  margin: 10px;
 }
 #klien:hover img {
   opacity: 1;
 }
 
 #beli {
+  display: none;
   margin: 40px 0;
 }
 #beli .kotak {
@@ -689,12 +791,74 @@ nav li a:hover {
 
 #aside, #footer {
   background: #4f4f4f;
+  color: #cccccc;
+  padding: 30px 0;
+}
+#aside h2, #footer h2 {
+  margin-top: 0;
+  font-size: 15px;
+}
+#aside img, #footer img {
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  display: block;
+  margin-bottom: 15px;
+  opacity: 0.4;
+}
+#aside img:hover, #footer img:hover {
+  opacity: 1;
+}
+#aside i, #footer i {
+  float: left;
+}
+#aside p, #footer p {
+  font-size: 13px;
+  line-height: 25px;
+  margin-bottom: 0;
+  margin-left: 25px;
+}
+#aside ul, #footer ul {
+  padding: 0;
+  margin: 0;
+}
+#aside ul.jejaring, #footer ul.jejaring {
+  margin-top: 0;
+}
+#aside li, #footer li {
+  padding: 0;
+  list-style: none;
+}
+#aside li a, #footer li a {
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  font-size: 13px;
+  line-height: 25px;
+  color: #cccccc;
+  text-decoration: none;
+}
+#aside li a:hover, #footer li a:hover {
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
   color: #fff;
-  padding: 20px 0;
 }
 
 #footer {
+  padding: 20px 0;
   background: #1c1c1c;
+}
+#footer p {
+  margin: 0;
+  float: left;
+}
+#footer p.kredit {
+  text-align: right;
+  float: right;
 }
 
 /* font-face */
@@ -912,4 +1076,20 @@ nav li a:hover {
 
 .foundicon-search:before {
   content: "\f02e";
+}
+
+@media only screen and (max-width: 767px) {
+  #aside [class*="zeen"], #footer [class*="zeen"] {
+    margin-bottom: 25px;
+  }
+
+  #footer p {
+    text-align: center;
+    clear: both;
+    width: 100%;
+  }
+  #footer p.kredit {
+    text-align: center;
+    clear: both;
+  }
 }
