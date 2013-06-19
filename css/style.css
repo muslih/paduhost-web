@@ -355,37 +355,6 @@ p {
   line-height: 25px;
 }
 
-button {
-  -webkit-transition-duration: 1s;
-  -moz-transition-duration: 1s;
-  -o-transition-duration: 1s;
-  transition-duration: 1s;
-  font-size: 15px;
-  color: #5e5e5e;
-  border: none;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-  background: #fdc438;
-  padding: 10px 15px 10px 15px;
-  -webkit-box-shadow: #cd9202 0 -3px 0 inset;
-  -moz-box-shadow: #cd9202 0 -3px 0 inset;
-  box-shadow: #cd9202 0 -3px 0 inset;
-}
-button:hover {
-  color: #fff;
-  -webkit-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  background: #fcb506;
-  -webkit-box-shadow: #815c01 0 -3px 0 inset;
-  -moz-box-shadow: #815c01 0 -3px 0 inset;
-  box-shadow: #815c01 0 -3px 0 inset;
-}
-
 /*******************************************************************************/
 /*     header
 /*******************************************************************************/
@@ -487,10 +456,54 @@ nav li a:hover {
 #fitur p, #paket p {
   color: #686868;
 }
-
-.tombol {
+#fitur .tombol, #paket .tombol {
   margin: 15px 0 50px 0;
   display: block;
+}
+#fitur .tombol:after, #paket .tombol:after {
+  border-top: solid 1px #a8a8a8;
+  display: block;
+  content: "";
+  margin-top: -20px;
+}
+#fitur button, #paket button {
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-property: background;
+  -moz-transition-property: background;
+  -o-transition-property: background;
+  transition-property: background;
+  font-size: 15px;
+  color: white;
+  border: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background: #fdc438;
+  padding: 10px 15px 10px 15px;
+  -webkit-box-shadow: whitesmoke 0 0 0 10px;
+  -moz-box-shadow: whitesmoke 0 0 0 10px;
+  box-shadow: whitesmoke 0 0 0 10px;
+  border-bottom: solid 3px #cd9202;
+}
+#fitur button:hover, #paket button:hover {
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: background;
+  -moz-transition-property: background;
+  -o-transition-property: background;
+  transition-property: background;
+  background: #fcb506;
+}
+#fitur button:active, #paket button:active {
+  margin-top: 2px;
+  border-bottom: solid 1px #815c01;
 }
 
 #paket .kotak {
@@ -503,6 +516,7 @@ nav li a:hover {
   box-shadow: 1px 1px 0px #828282;
   background: #fff;
   padding: 10px;
+  margin-bottom: 50px;
 }
 #paket .kotak p {
   margin: 0;
@@ -512,26 +526,165 @@ nav li a:hover {
   -moz-transition-duration: 1s;
   -o-transition-duration: 1s;
   transition-duration: 1s;
-  -webkit-box-shadow: 2px 2px 0px #686868;
-  -moz-box-shadow: 2px 2px 0px #686868;
-  box-shadow: 2px 2px 0px #686868;
+  -webkit-box-shadow: 2px 2px 1px #686868;
+  -moz-box-shadow: 2px 2px 1px #686868;
+  box-shadow: 2px 2px 1px #686868;
+}
+#paket .kotak .tombol:after {
+  content: none;
+}
+#paket .kotak .tombol button {
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-property: background;
+  -moz-transition-property: background;
+  -o-transition-property: background;
+  transition-property: background;
+  font-size: 15px;
+  color: white;
+  border: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background: #fdc438;
+  padding: 10px 15px 10px 15px;
+  -webkit-box-shadow: transparent 0 0 0 10px;
+  -moz-box-shadow: transparent 0 0 0 10px;
+  box-shadow: transparent 0 0 0 10px;
+  border-bottom: solid 3px #cd9202;
+}
+#paket .kotak .tombol button:hover {
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: background;
+  -moz-transition-property: background;
+  -o-transition-property: background;
+  transition-property: background;
+  background: #fcb506;
+}
+#paket .kotak .tombol button:active {
+  margin-top: 2px;
+  border-bottom: solid 1px #815c01;
 }
 #paket .tombol {
-  margin: 15px 0px;
+  margin-bottom: 0;
+  display: block;
+}
+#paket .tombol button {
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-property: background;
+  -moz-transition-property: background;
+  -o-transition-property: background;
+  transition-property: background;
+  font-size: 15px;
+  color: white;
+  border: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background: #fdc438;
+  padding: 10px 15px 10px 15px;
+  -webkit-box-shadow: whitesmoke 0 0 0 10px;
+  -moz-box-shadow: whitesmoke 0 0 0 10px;
+  box-shadow: whitesmoke 0 0 0 10px;
+  border-bottom: solid 3px #cd9202;
+}
+#paket .tombol button:hover {
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: background;
+  -moz-transition-property: background;
+  -o-transition-property: background;
+  transition-property: background;
+  background: #fcb506;
+}
+#paket .tombol button:active {
+  margin-top: 2px;
+  border-bottom: solid 1px #815c01;
 }
 
 #klien {
   background: #e2e2e2;
   margin: 50px 0;
-  padding: 15px 0;
+  padding: 15px;
+  text-align: center;
+}
+#klien img {
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  opacity: 0.7;
+}
+#klien:hover img {
+  opacity: 1;
 }
 
 #beli {
   margin: 40px 0;
 }
 #beli .kotak {
-  padding: 15px;
+  overflow: hidden;
+  padding: 25px 15px;
   background: #fff;
+}
+#beli .kotak p {
+  margin-bottom: 0;
+  float: left;
+  width: 80%;
+}
+#beli .kotak button {
+  float: right;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-property: background;
+  -moz-transition-property: background;
+  -o-transition-property: background;
+  transition-property: background;
+  font-size: 15px;
+  color: white;
+  border: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background: #fdc438;
+  padding: 10px 15px 10px 15px;
+  -webkit-box-shadow: transparent 0 0 0 10px;
+  -moz-box-shadow: transparent 0 0 0 10px;
+  box-shadow: transparent 0 0 0 10px;
+  border-bottom: solid 3px #cd9202;
+}
+#beli .kotak button:hover {
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: background;
+  -moz-transition-property: background;
+  -o-transition-property: background;
+  transition-property: background;
+  background: #fcb506;
+}
+#beli .kotak button:active {
+  margin-top: 2px;
+  border-bottom: solid 1px #815c01;
 }
 
 #aside, #footer {
