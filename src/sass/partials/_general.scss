@@ -362,6 +362,10 @@ nav{
 			img{
 				float: left;
 			}
+
+			&:first-child{
+				margin-left: 0;
+			}
 		}
 	}
 }

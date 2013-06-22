@@ -873,6 +873,9 @@ nav li a:hover {
 #footer .kredit li img {
   float: left;
 }
+#footer .kredit li:first-child {
+  margin-left: 0;
+}
 
 /* font-face */
 @font-face {
