@@ -277,6 +277,10 @@ nav{
 	}
 }
 
+/*******************************************************************************/
+/*     aside
+/*******************************************************************************/
+
 #aside{
 	background: lighten($secColor,10%);
 	color:darken(#fff,20%);
@@ -334,17 +338,30 @@ nav{
 	}
 }
 
+
+/*******************************************************************************/
+/*     footer
+/*******************************************************************************/
 #footer{
-	padding:20px 0;
+	padding:20px 0 0 0;
 	@extend #aside;	
 	background: darken($secColor,10%);
 	p{
 		margin:0;
-		float: left;	
-	
-		&.kredit{
-			text-align: right;
-			float: right;
+		float: left;
+		// line-height: 20px;	
+	}
+
+	.kredit{
+		text-align: right;
+		float: right;
+
+		li{
+			display: inline-table;
+			margin-left: 15px;
+			img{
+				float: left;
+			}
 		}
 	}
 }

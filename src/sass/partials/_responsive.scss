@@ -4,17 +4,36 @@
 		[class*="zeen"]{
 				margin-bottom: 25px;
 			}
+
+		text-align: center;
+
+		img{
+			margin:auto auto 15px auto;
+		}
+
+		i{
+			float: none;
+		}
+
+		p{
+			margin-left: 0;
+		}
 	}
 
 	#footer{
+		padding-bottom: 10px;
 		p{
 			text-align: center;
 			clear: both;
 			width: 100%;
+		}
 
-			&.kredit{
-				text-align: center;
-				clear: both;
+		.kredit{
+			float: none;
+			text-align: center;
+
+			li{
+				margin-top: 15px;
 			}
 		}
 		
