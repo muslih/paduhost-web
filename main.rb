@@ -1,6 +1,6 @@
 require 'sinatra'
+require 'shotgun'
 require 'sinatra/reloader' if development?
-require 'compass'
 
 get '/' do
 	erb :home
