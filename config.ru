@@ -3,4 +3,3 @@ require 'sinatra/base'
 require './main'
 
 run Sinatra::Application
-run SinatraStaticServer

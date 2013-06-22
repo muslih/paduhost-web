@@ -1,3 +1,4 @@
+require 'rubygems'
 require 'sinatra'
 require 'shotgun'
 require 'sinatra/reloader' if development?
