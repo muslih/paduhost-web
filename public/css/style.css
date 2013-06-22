@@ -1092,6 +1092,20 @@ nav li a:hover {
 }
 
 @media only screen and (max-width: 767px) {
+  #logo {
+    display: block;
+    float: none;
+    text-align: center;
+    padding: 25px 0;
+  }
+
+  nav {
+    float: none;
+  }
+  nav li a {
+    padding: 30px 5px 20px 5px;
+  }
+
   #aside, #footer {
     text-align: center;
   }
