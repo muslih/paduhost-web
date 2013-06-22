@@ -789,6 +789,9 @@ nav li a:hover {
   border-bottom: solid 1px #815c01;
 }
 
+/*******************************************************************************/
+/*     aside
+/*******************************************************************************/
 #aside, #footer {
   background: #4f4f4f;
   color: #cccccc;
@@ -848,17 +851,27 @@ nav li a:hover {
   color: #fff;
 }
 
+/*******************************************************************************/
+/*     footer
+/*******************************************************************************/
 #footer {
-  padding: 20px 0;
+  padding: 20px 0 0 0;
   background: #1c1c1c;
 }
 #footer p {
   margin: 0;
   float: left;
 }
-#footer p.kredit {
+#footer .kredit {
   text-align: right;
   float: right;
+}
+#footer .kredit li {
+  display: inline-table;
+  margin-left: 15px;
+}
+#footer .kredit li img {
+  float: left;
 }
 
 /* font-face */
@@ -1079,17 +1092,35 @@ nav li a:hover {
 }
 
 @media only screen and (max-width: 767px) {
+  #aside, #footer {
+    text-align: center;
+  }
   #aside [class*="zeen"], #footer [class*="zeen"] {
     margin-bottom: 25px;
   }
+  #aside img, #footer img {
+    margin: auto auto 15px auto;
+  }
+  #aside i, #footer i {
+    float: none;
+  }
+  #aside p, #footer p {
+    margin-left: 0;
+  }
 
+  #footer {
+    padding-bottom: 10px;
+  }
   #footer p {
     text-align: center;
     clear: both;
     width: 100%;
   }
-  #footer p.kredit {
+  #footer .kredit {
+    float: none;
     text-align: center;
-    clear: both;
+  }
+  #footer .kredit li {
+    margin-top: 15px;
   }
 }
