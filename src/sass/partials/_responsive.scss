@@ -5,10 +5,15 @@
 		text-align: center;
 		padding: 25px 0;
 	}
-
+	
 	nav{
+		ul{
+			text-align: center;
+		}
 		float: none;
 		li{
+			float: none;
+			display: inline-block;
 			a{
 				padding: 30px 5px 20px 5px;
 			}

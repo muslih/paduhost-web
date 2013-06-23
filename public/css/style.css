@@ -1106,6 +1106,13 @@ nav li a:hover {
   nav {
     float: none;
   }
+  nav ul {
+    text-align: center;
+  }
+  nav li {
+    float: none;
+    display: inline-block;
+  }
   nav li a {
     padding: 30px 5px 20px 5px;
   }
