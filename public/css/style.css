@@ -815,6 +815,7 @@ nav li a:hover {
 }
 #aside i, #footer i {
   float: left;
+  line-height: 25px;
 }
 #aside p, #footer p {
   font-size: 13px;
