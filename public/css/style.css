@@ -1119,6 +1119,7 @@ nav li a:hover {
 
   #aside, #footer {
     text-align: center;
+    padding-bottom: 0px;
   }
   #aside [class*="zeen"], #footer [class*="zeen"] {
     margin-bottom: 25px;
