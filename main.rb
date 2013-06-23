@@ -2,18 +2,22 @@ require 'rubygems'
 require 'sinatra'
 require 'sinatra/reloader' if development?
 get '/' do
+	# @title = "Awal"
 	erb :home
 end
 
 get '/kontak' do
+	@title = "Kontak"
 	erb :contact
 end
 
 not_found do
+	@title = "404"
     erb :not_found
 end
 
 get '/fake-error' do
+
     status 500
     "There's no wrong, really :p"
 end
