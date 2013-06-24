@@ -799,6 +799,7 @@ nav li a:hover {
 }
 #aside h2, #footer h2 {
   margin-top: 0;
+  margin-bottom: 5px;
   font-size: 15px;
 }
 #aside img, #footer img {
