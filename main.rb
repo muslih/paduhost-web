@@ -2,6 +2,7 @@ require 'rubygems'
 require 'sinatra'
 require 'sinatra/reloader' if development?
 get '/' do
+	@slogan = "<strong>Paduhost</strong><em>Layanan murah web hosting indonesia</em>"
 	# @title = "Awal"
 	erb :home
 end
