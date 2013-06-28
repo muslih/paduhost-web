@@ -38,10 +38,16 @@
         </div>
         <div class="baris">
             <div id="slide">
-                    <p>
-                        <strong>Paduhost</strong>
-                        <em>Layanan murah web hosting indonesia</em>
-                    </p>
+                    
+                <p>
+                    <%=
+                        if defined?(@title)
+                            "<strong>#{@title}</strong>" 
+                        else
+                            @slogan
+                        end
+                        %>      
+                </p>            
             </div> <!-- .slide -->          
         </div><!-- .baris -->
 
