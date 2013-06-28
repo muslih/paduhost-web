@@ -441,6 +441,7 @@ nav li a:hover {
 /*******************************************************************************/
 #konten {
   background: whitesmoke;
+  padding-top: 25px;
 }
 
 #fitur, #paket {
