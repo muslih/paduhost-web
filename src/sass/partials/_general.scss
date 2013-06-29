@@ -17,7 +17,7 @@ p{
 
 .garis{
 	display: block;
-	border-bottom: 1px solid  #444;
+	border-bottom: 1px solid  lighten($secColor,45%);
 	clear: both;
 }
 
@@ -145,6 +145,7 @@ nav{
 
 
 #paket{
+	margin-top: 1.5em;
 	@extend #fitur;
 	@include transition-duration(1s);
 
@@ -269,7 +270,7 @@ nav{
 
 
 #beli{
-	display: none;
+	// display: none;
 	margin:40px 0;
 	.kotak{
 		overflow: hidden;
