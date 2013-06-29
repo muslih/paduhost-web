@@ -15,6 +15,15 @@ p{
 	line-height: 25px;
 }
 
+.garis{
+	display: block;
+	border-bottom: 1px solid  #444;
+	clear: both;
+}
+
+.kuning{
+	color: $mainColor;
+}
 
 /*******************************************************************************/
 /*     header
@@ -98,7 +107,7 @@ nav{
 
 #konten{
 	background: $kontenColor;
-	padding-top: 25px;	
+	padding: 20px 0;	
 }
 
 #fitur{
