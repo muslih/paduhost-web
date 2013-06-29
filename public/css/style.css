@@ -358,7 +358,7 @@ p {
 
 .garis {
   display: block;
-  border-bottom: 1px solid  #444;
+  border-bottom: 1px solid #a8a8a8;
   clear: both;
 }
 
@@ -519,6 +519,7 @@ nav li a:hover {
 }
 
 #paket {
+  margin-top: 1.5em;
   -webkit-transition-duration: 1s;
   -moz-transition-duration: 1s;
   -o-transition-duration: 1s;
@@ -746,7 +747,6 @@ nav li a:hover {
 }
 
 #beli {
-  display: none;
   margin: 40px 0;
 }
 #beli .kotak {
