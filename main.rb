@@ -12,6 +12,16 @@ get '/kontak' do
 	erb :contact
 end
 
+get '/fitur' do
+	@title = "Fitur Paduhost"
+	erb :fitur
+end
+
+get '/hosting' do
+	@title = "Paket Hosting"
+	erb :hosting
+end
+
 not_found do
 	@title = "404"
     erb :not_found
