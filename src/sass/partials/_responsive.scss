@@ -23,6 +23,18 @@
 		}
 	}
 
+	#beli{
+		text-align: center;
+		p{
+			width: 100%;
+			clear: both;
+			margin-bottom: 10px;
+		}
+		button{
+			float: none;
+		}
+	}
+
 
 	#aside{
 		[class*="zeen"]{

@@ -276,15 +276,15 @@ nav{
 		overflow: hidden;
 		padding: 25px 15px;
 		background: #fff;
-		p{
-			margin-bottom: 0;
-			float: left;
-			width: 80%;
-		}
-		button{
-			float: right;
-			@include tombol($mainColor,#fff,transparent);
-		}
+	}
+	p{
+		margin-bottom: 0;
+		float: left;
+		width: 75%;
+	}
+	button{
+		float: right;
+		@include tombol($mainColor,#fff,transparent);
 	}
 }
 

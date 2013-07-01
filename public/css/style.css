@@ -754,12 +754,12 @@ nav li a:hover {
   padding: 25px 15px;
   background: #fff;
 }
-#beli .kotak p {
+#beli p {
   margin-bottom: 0;
   float: left;
-  width: 80%;
+  width: 75%;
 }
-#beli .kotak button {
+#beli button {
   float: right;
   -webkit-transition-duration: 1s;
   -moz-transition-duration: 1s;
@@ -784,7 +784,7 @@ nav li a:hover {
   box-shadow: transparent 0 0 0 10px;
   border-bottom: solid 3px #cd9202;
 }
-#beli .kotak button:hover {
+#beli button:hover {
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
@@ -795,7 +795,7 @@ nav li a:hover {
   transition-property: background;
   background: #fcb506;
 }
-#beli .kotak button:active {
+#beli button:active {
   margin-top: 2px;
   border-bottom: solid 1px #815c01;
 }
@@ -1133,6 +1133,18 @@ nav li a:hover {
   }
   nav li a {
     padding: 30px 5px 20px 5px;
+  }
+
+  #beli {
+    text-align: center;
+  }
+  #beli p {
+    width: 100%;
+    clear: both;
+    margin-bottom: 10px;
+  }
+  #beli button {
+    float: none;
   }
 
   #aside, #footer {
