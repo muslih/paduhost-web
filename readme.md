@@ -3,7 +3,7 @@
 Review
 ------
 
-A clean [sinatra](http://sinatrarb.com) website created by using ***sass/compass***, ***zeengrid***. with structure below:
+A clean [sinatra](http://sinatrarb.com) website created by using ***sass/compass***, ***guard***, ***coffescript***, ***zeengrid***. with structure below:
 
 ```
 ├── config.rb
