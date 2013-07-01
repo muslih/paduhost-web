@@ -1,5 +1,9 @@
 #Paduhost Website
-Paduhost website is a website created by using ***sass/compass***,***zeengrid***,and of course with my favorite tools ***sinatra***. with structure below:
+
+Review
+------
+
+A clean [sinatra](http://sinatrarb.com) website created by using ***sass/compass***,***zeengrid***,and of course with my favorite tools ***sinatra***. with structure below:
 
 ```
 ├── config.rb
@@ -64,7 +68,8 @@ Paduhost website is a website created by using ***sass/compass***,***zeengrid***
     └── not_found.erb
 
 ```
-## How to use it?
+How to use it?
+--------------
 jus simply fork , go to the directory and then type on your terminal
 ```bash
 sudo bundle install
@@ -73,5 +78,10 @@ and then run it by using
 ```ruby
 ruby main.rb
 ```
+Todo
+----
+*adding contact form page
+*adding pony mail
+*adding billing host
 
 hope you enjoy it! :)
