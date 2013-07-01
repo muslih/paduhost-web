@@ -3,7 +3,7 @@
 Review
 ------
 
-A clean [sinatra](http://sinatrarb.com) website created by using ***sass/compass***,***zeengrid***,and of course with my favorite tools ***sinatra***. with structure below:
+A clean [sinatra](http://sinatrarb.com) website created by using ***sass/compass***, ***zeengrid***. with structure below:
 
 ```
 ├── config.rb
@@ -80,8 +80,8 @@ ruby main.rb
 ```
 Todo
 ----
-*adding contact form page
-*adding pony mail
-*adding billing host
+* adding contact form page
+* adding pony mail
+* adding billing host
 
 hope you enjoy it! :)
