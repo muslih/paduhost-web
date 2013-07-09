@@ -78,6 +78,10 @@ and then run it by using
 ```ruby
 ruby main.rb
 ```
+or with another choice
+```ruby
+rackup config.ru
+```
 Todo
 ----
 * adding contact form page
