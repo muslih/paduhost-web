@@ -88,4 +88,4 @@ Todo
 * adding pony mail
 * adding billing host
 
-hope you enjoy it! :)
+Just let me know if you found any mistake :) hope you enjoy it!
