@@ -1,15 +1,23 @@
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, autem dolore quasi pariatur porro eveniet molestias dicta minus numquam ab. Labore facilis expedita libero in cupiditate quod est totam saepe.
-</p>	
+<form action="">
+	<label for="nama">Nama <span>*</span> </label>
+	<input type="text" name="nama" required>
+	<br/>
+	<label for="email">Email <span>*</span></label>
+	<input type="email" name="email" required>
+	<br/><label for="judul">Judul</label>
+	<input type="text" name="judul" required>
+	<br/><label for="pesan">Pesan <span>*</span></label>
+	<input type="textbox" name="pesan" required>
+	<p><span>(*)</span> Wajib diisi</p>
+	<br/><button type="submit">Kirim</button>
+</form>
+ <%
+ # $i=0
+# $num = 5
+# while $i < $num do %>
 
-<%=
-$i=0
-$num = 5
 
-while $i < $num do 
-
-	puts $i
-
-$i += 1
-end
-%>
+ <%
+# $i += 1
+# end
+# %>
