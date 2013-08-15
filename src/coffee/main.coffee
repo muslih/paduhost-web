@@ -15,7 +15,6 @@ $ ->
 	console.log(url)
 	$('nav a').each ->
 		if $(@).attr('href') == url
-			
 			$(@).addClass('active')
 		else
 			$('#nav li').first ->
